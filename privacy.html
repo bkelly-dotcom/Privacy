@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Geomantia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a0e04;
+    --parchment: #f7edd8;
+    --parchment2: #ede0c4;
+    --gold: #b8860b;
+    --gold2: #d4a017;
+    --gold3: #f0c040;
+    --red: #7a1c1c;
+    --dark: #1a0e04;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: #120a02;
+    background-image:
+      radial-gradient(ellipse at 50% 0%, rgba(184,134,11,0.12) 0%, transparent 60%),
+      repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(184,134,11,0.02) 60px, rgba(184,134,11,0.02) 61px),
+      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(184,134,11,0.02) 60px, rgba(184,134,11,0.02) 61px);
+    min-height: 100vh;
+    font-family: 'Crimson Pro', Georgia, serif;
+    color: var(--ink);
+    padding: 0 0 80px;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(180deg, #0e0602 0%, #1e0f04 100%);
+    border-bottom: 1px solid rgba(184,134,11,0.3);
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 100%, rgba(184,134,11,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .header-ornament {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 0 12px rgba(212,160,23,0.5));
+  }
+
+  .app-name {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(28px, 6vw, 42px);
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--gold3);
+    text-shadow: 0 0 40px rgba(212,160,23,0.4);
+    margin-bottom: 6px;
+  }
+
+  .app-tagline {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: rgba(240,192,64,0.5);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .header-divider {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 20px;
+  }
+
+  .page-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: rgba(240,192,64,0.7);
+    text-transform: uppercase;
+  }
+
+  /* CONTENT */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .content-card {
+    background: var(--parchment);
+    border-radius: 4px;
+    margin-top: 40px;
+    border: 1px solid rgba(184,134,11,0.25);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.4) inset;
+    overflow: hidden;
+  }
+
+  .card-header {
+    background: linear-gradient(180deg, rgba(184,134,11,0.12), rgba(184,134,11,0.04));
+    border-bottom: 1px solid rgba(184,134,11,0.2);
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .effective-date {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  .developer-name {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: #8b6030;
+    text-transform: uppercase;
+  }
+
+  .card-body {
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* SECTIONS */
+  .section { display: flex; flex-direction: column; gap: 10px; }
+
+  .section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    color: var(--red);
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(184,134,11,0.2);
+  }
+
+  .section p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #3a2010;
+  }
+
+  .section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 4px;
+  }
+
+  .section ul li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3a2010;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .section ul li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    font-size: 8px;
+    color: var(--gold);
+    top: 6px;
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box {
+    background: linear-gradient(135deg, rgba(26,74,42,0.06), rgba(26,74,42,0.03));
+    border: 1px solid rgba(26,74,42,0.2);
+    border-left: 3px solid #1a4a2a;
+    border-radius: 0 3px 3px 0;
+    padding: 16px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .highlight-box .icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+
+  .highlight-box p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1a3a20;
+    font-weight: 600;
+  }
+
+  /* DIVIDER */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(184,134,11,0.2), transparent);
+  }
+
+  /* CONTACT */
+  .contact-box {
+    background: rgba(184,134,11,0.06);
+    border: 1px solid rgba(184,134,11,0.2);
+    border-radius: 3px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .contact-box .contact-label {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  .contact-box a {
+    color: var(--red);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .contact-box a:hover { text-decoration: underline; }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 40px 24px 0;
+  }
+
+  .footer-ornament {
+    font-size: 20px;
+    color: rgba(184,134,11,0.4);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: rgba(184,134,11,0.35);
+    text-transform: uppercase;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 520px) {
+    .card-body { padding: 24px 20px; }
+    .card-header { padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="header-ornament">✦</span>
+  <div class="app-name">Geomantia</div>
+  <div class="app-tagline">Earth Divination</div>
+  <div class="header-divider"></div>
+  <div class="page-title">Privacy Policy</div>
+</header>
+
+<div class="container">
+  <div class="content-card">
+
+    <div class="card-header">
+      <span class="effective-date">Effective Date: May 12, 2026</span>
+      <span class="developer-name">Lots o' Dots — Developer</span>
+    </div>
+
+    <div class="card-body">
+
+      <div class="highlight-box">
+        <span class="icon">🔒</span>
+        <p>Geomantia does not collect, store, transmit, or share any personal data of any kind. Your readings stay on your device and belong only to you.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Overview</div>
+        <p>This Privacy Policy describes how Geomantia ("the App"), developed by Lots o' Dots, handles your information. We are committed to your privacy. This policy is straightforward because there is very little to say — Geomantia is designed from the ground up to collect no data whatsoever.</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section">
+        <div class="section-title">Information We Do Not Collect</div>
+        <p>Geomantia does not collect any of the following:</p>
+        <ul>
+          <li>Personal identification information (name, email address, phone number, etc.)</li>
+          <li>Device identifiers or hardware information</li>
+          <li>Location data of any kind</li>
+          <li>Usage data, analytics, or behavioral tracking</li>
+          <li>Crash reports or diagnostic data sent to us</li>
+          <li>Reading history or divination content</li>
+          <li>Payment information (all purchases are processed entirely by Apple)</li>
+          <li>Cookies or any tracking technologies</li>
+        </ul>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section">
+        <div class="section-title">How Your Data Is Stored</div>
+        <p>Any data generated by your use of Geomantia — including your reading history and any preferences — is stored exclusively on your device using Apple's standard local storage. This data never leaves your device and is never transmitted to us or any third party.</p>
+        <p>If you delete the App, all locally stored data is permanently removed from your device.</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section">
+        <div class="section-title">In-App Purchases</div>
+        <p>Geomantia offers optional in-app purchases including casting method unlocks and skin packs. All purchases are processed entirely by Apple through the App Store. Lots o' Dots does not receive, process, or store any payment or billing information. Please refer to Apple's Privacy Policy for information on how Apple handles purchase data.</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section">
+        <div class="section-title">Third-Party Services</div>
+        <p>Geomantia does not integrate with any third-party analytics, advertising, tracking, or data collection services. We do not use Google Analytics, Facebook SDK, or any similar tools.</p>
+        <p>The only third-party interaction is with Apple's App Store for the purpose of processing in-app purchases, which is governed entirely by Apple's own privacy policy.</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section">
+        <div class="section-title">Children's Privacy</div>
+        <p>Geomantia does not knowingly collect any information from anyone, including children under the age of 13. Because the App collects no data at all, it presents no privacy risk to users of any age.</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section">
+        <div class="section-title">Changes to This Policy</div>
+        <p>If we ever update this Privacy Policy — for example, if a future version of the App introduces new features — we will update the effective date at the top of this page and, where appropriate, notify users through the App Store update notes. We encourage you to review this policy periodically.</p>
+        <p>Any future data collection would only occur with your explicit knowledge and, where required by law, your consent.</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section">
+        <div class="section-title">Contact</div>
+        <p>If you have any questions about this Privacy Policy or about Geomantia, please contact us:</p>
+        <div class="contact-box">
+          <span class="contact-label">Lots o' Dots</span>
+          <a href="mailto:privacy@lotsodots.com">privacy@lotsodots.com</a>
+          <span style="font-size:14px;color:#8b6030;font-style:italic">lotsodots.com</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-ornament">✦</span>
+    <div class="footer-text">© 2026 Lots o' Dots · All Rights Reserved</div>
+  </footer>
+</div>
+
+</body>
+</html>
